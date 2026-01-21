@@ -1,9 +1,9 @@
 /**
  * Meal Planner App
- * 
+ *
  * Cross-platform mobile application for meal planning and recipe management
  * Developed on Windows, deployable to iOS
- * 
+ *
  * @format
  */
 
