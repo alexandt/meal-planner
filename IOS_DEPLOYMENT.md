@@ -89,7 +89,7 @@ This guide covers deploying the Meal Planner app to iOS devices.
 ### App Store Preparation
 
 1. **Configure app information**
-   - Update bundle identifier in `ios/ElectionProject/Info.plist`
+   - Update bundle identifier in `ios/MealPlanner/Info.plist`
    - Set version and build number
 
 2. **Configure signing for release**
