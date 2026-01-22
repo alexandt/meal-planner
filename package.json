@@ -1,7 +1,7 @@
 {
   "name": "meal-planner",
   "version": "0.0.1",
-  "description": "Meal Planner - Plan your meals and build your recipe collection. Developed on Windows, deployed to iOS",
+  "description": "Meal Planner - Plan your meals and build your recipe collection. Cross-platform mobile app for iOS and Android",
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
