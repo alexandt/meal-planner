@@ -1,6 +1,6 @@
 # Meal Planner
 
-A cross-platform mobile application for meal planning, recipe management, and grocery shopping. This project is designed to be developed on Windows and deployed to iOS devices.
+A cross-platform mobile application for meal planning, recipe management, and grocery shopping. This project supports both iOS and Android platforms.
 
 ## 🎯 Project Overview
 
@@ -24,10 +24,12 @@ This app provides a complete solution for managing your meals and groceries with
 
 - **Node.js** >= 18.x
 - **npm** or **yarn**
-- **Windows** development machine
 - For iOS deployment:
   - macOS machine with Xcode (for building iOS apps)
   - CocoaPods (for iOS dependencies)
+- For Android deployment:
+  - Android Studio with Android SDK
+  - Java Development Kit (JDK) >= 17
 
 ### Windows Development Setup
 
@@ -73,12 +75,37 @@ This app provides a complete solution for managing your meals and groceries with
    - Select your device
    - Build and run (⌘+R)
 
+## 🤖 Android Deployment
+
+### Building for Android
+
+1. **Set up Android development environment**
+   - Install Android Studio
+   - Set ANDROID_HOME environment variable
+   - Install Android SDK Platform 35
+
+2. **Run on Android emulator**
+   ```bash
+   npm run android
+   ```
+
+3. **Run on Android device**
+   - Enable USB debugging on your device
+   - Connect via USB
+   - Run `npm run android`
+
+For detailed Android setup and deployment instructions, see [ANDROID_DEPLOYMENT.md](ANDROID_DEPLOYMENT.md).
+
 ## 📂 Project Structure
 
 ```
 meal-planner/
 ├── __tests__/          # Test files
 │   └── App.test.tsx
+├── android/            # Android native code and configuration
+│   ├── app/            # Android app module
+│   ├── gradle/         # Gradle wrapper
+│   └── build.gradle    # Gradle build configuration
 ├── ios/                # iOS native code and configuration
 │   ├── Podfile         # CocoaPods dependencies
 │   └── .xcode.env      # Xcode environment configuration
@@ -142,6 +169,7 @@ This framework is ready for implementing meal planning features:
 
 - [Windows Setup Guide](WINDOWS_SETUP.md) - Detailed Windows development setup
 - [iOS Deployment Guide](IOS_DEPLOYMENT.md) - Complete iOS deployment instructions
+- [Android Deployment Guide](ANDROID_DEPLOYMENT.md) - Complete Android deployment instructions
 
 ## 📝 License
 
